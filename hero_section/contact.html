@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us – InnoFund Nexus</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<style>
+ * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            display: flex;
+            flex-direction: column; /* Change to column to stack nav and content */
+             /* Center items horizontally */
+            min-height: 100vh;      /* Ensure full height */
+            /* padding: 20px; */
+        }
+
+        header h2 {
+            background: #eff1f1;
+            color: #0f0e0e;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        .contact-container {
+            align-items:self-start;
+            background: #fff;
+            margin: 100px;
+            padding: 25px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+            border-radius: 10px;
+            margin-top: 5%; /* Add margin to separate from nav */
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px;
+            text-align: left;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            
+            padding: 10px;
+            border: 2px solid #838080;
+            border-radius: 20px;
+            font-size: 16px;
+
+        }
+        ::placeholder {
+        color: rgb(155, 155, 155);
+        }
+    button {
+            background-size: 220%;
+            box-shadow: 0 .2em .3em rgba(0, 0, 0, 0.15);
+            color: #3363ff;
+            background-color: transparent;
+            background-position: 100%;
+            border: 3px solid #3363ff;
+            text-transform: uppercase;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all .2s ease-out;
+            font-weight: 700;
+            cursor: pointer;
+            letter-spacing: 2px;
+            background-image: linear-gradient(110deg, #3363ff 0%, #3363ff 50%, transparent 50%, transparent 100%);
+            font-size: 16px;
+        }
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 .3em rgba(0, 0, 0, 0.25);
+    background-position: 0;
+    color: #fff;
+
+}
+button:active {
+    transform: translateY(-1px);
+}  
+
+
+.main-container {
+    display: flex;           /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;            /* Full width */
+    margin-top: 20px;       /* Space between nav and content */
+}
+
+.contact-container {
+    background: #fff;
+    padding: 25px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+    margin-right: 20px;     /* Space between form and image */
+}
+
+.contact-image {
+    width: 100px;           /* Set width of the image */
+    height: auto;           /* Maintain aspect ratio */
+    max-width:300px;       /* Max width for responsiveness */
+}
+img{
+    width: 700px;
+    height: 500px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 20px;
+        width: 100%;
+        margin-right: 0; /* Remove margin on small screens */
+    }
+
+    .contact-image {
+        display: none; /* Hide image on small screens */
+    }
+}
+        /*Responsive Design */
+        @media (max-width: 480px) {
+            .contact-container {
+                padding: 20px;
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .input-group label {
+                font-size: 14px;
+            }
+
+            .input-group input {
+                font-size: 14px;
+            }
+        }
+</style>
+<body>
+    <nav>
+        <div class="nav-title">InnoFund Nexus</div>
+        <div  class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="#support">Startup Support</a>
+            <a href="#funding">Funding Solutions</a>
+            <a href="#innovation">Innovation Lab</a>
+            <a href="#stories">Success Stories</a>
+            <a href="./resource.html">Resources</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    
+    </nav>
+    <header>
+        <h2>Contact Us</h2>
+    </header>
+    <div class="main-container">
+    <div class="contact-container ">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="input-group">
+                <label for="phone"><i class="fas fa-phone"></i> 📞 Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email"><i class="fas fa-envelope"></i> 📧 Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="website"><i class="fas fa-globe"></i> 🌍 Website:</label>
+                <input type="url" id="website" name="website" placeholder="Enter your website URL">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+       
+    </div>
+    <img src="../assets/contact.jpg" alt="img">
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 InnoFund Nexus. All rights reserved.</p>
+    </footer>
+</body>
+</html>

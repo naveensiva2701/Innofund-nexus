@@ -1,0 +1,321 @@
+@keyframes textShadowPulse {
+    0% {
+        text-shadow: 0 0 4px rgba(0, 115, 230, 0.1);
+    }
+    50% {
+        text-shadow: 0 0 8px rgba(0, 115, 230, 0.3);
+    }
+    100% {
+        text-shadow: 0 0 4px rgba(0, 115, 230, 0.1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.nav-title {
+    display: inline-block;
+    font-weight: bolder;
+    white-space: nowrap;
+    font-size: larger;
+    font-family: 'Arial', sans-serif;
+    animation: textShadowPulse 3s infinite;
+    transition: all 0.3s ease;
+}
+
+.nav-title:hover {
+    text-shadow: 0 0 10px rgba(0, 115, 230, 0.5);
+}
+
+.nav-links {
+    display: inline-flex;   
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section_1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.section_1 {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url('./sec_1_bg.webp');
+    background-size: cover;
+    height: 80vh;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.section_1 .content {
+    width: 50%; /* Adjusted width to 50% */
+    position: absolute;
+    color: rgb(61, 58, 57);
+    top: 0%;
+    margin-bottom: 50px;
+    height: inherit;
+    background: rgba(251, 255, 255, 0.4); /* Adjusted background opacity */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.6s;
+}
+
+.section_1 .content:hover {
+    background: rgba(251, 255, 255, 0.6); /* Slightly increased opacity on hover */
+}
+
+nav {
+    background: rgb(59, 56, 52);
+    color: rgb(239, 239, 239);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    margin: 0 15px;
+    color: rgb(239, 239, 239);
+    font-size: small;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.05);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.container {
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+}
+
+.section_2 {
+    margin-bottom: 20px;
+    background: rgb(59, 56, 52);
+    border-radius: 12px;
+    padding: 50px 30px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: auto;    
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out; /* Added animation */
+} 
+
+.section_2 .cta-buttons a {
+    margin-bottom: 40px;
+}
+
+.section_2 h2, .section_4 h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.section_3 h2 {
+    width: 100%;
+    text-align: left;
+}
+
+h2 {
+    font-size: 2.5rem;  
+}
+
+.section_2 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.section_2 li .title {
+    font-weight: bold;
+}
+
+.section_2 li {
+    text-align: left;
+}
+
+.section_3 img, .section_5 img {
+    width: 30%;
+}
+
+.section_3 .content-body, .section_5 .content-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_3 span {
+    margin-bottom: 10px;
+}
+
+li {
+    margin: 10px;
+}
+
+.section_2 ul {
+    max-width: max-content;
+}
+
+.section_4, .section_6 {
+    background: rgb(59, 56, 52);
+    color: #fff;
+}
+
+.section_4 ul {
+    list-style-type: none;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #007bff, #6610f2);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.cta-buttons a:hover {
+    background: linear-gradient(90deg, #6610f2, #007bff);
+    transform: scale(1.05);
+}
+
+.section {
+    padding: 40px;
+    border-bottom: 1px solid #ddd;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2 {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+h1:hover, h2:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 70vh;
+}
+
+.section_6 {
+    background: #222;
+}
+
+.section_6 ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 40%;
+}
+
+.section_6 a {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .section_1 .content {
+        width: 50%; /* Adjusted width to 50% */
+    }
+    .section_3 .content-body, .section_5 .content-body {
+        flex-direction: column;
+    }
+    .section_3 img, .section_5 img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .section_1 .content {
+        width: 80%; /* Adjusted width for smaller screens */
+    }
+    .section_6 ul {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+}

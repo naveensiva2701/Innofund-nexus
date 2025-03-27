@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resources – InnoFund Nexus</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<style>
+     body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #eff1f1;
+            color: #0f0f0f;
+            text-align: center;
+            padding: 1px;
+        }
+        .section_1 .content {
+            width:auto; /* Adjusted width to 50% */
+        }
+        .content-book{
+            flex-direction:row;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+      .section_7 img{
+        width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 50%;
+       }
+       .section_7 h2{
+        margin-top: 10px;
+        margin-left: 70px;
+        margin-bottom: -40px;
+        text-align: left;
+        width: 100%;
+        background: linear-gradient(45deg, #ff4242, #f5ae21, #05fd0d);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+       }
+        .book ul li{
+        font-weight: 600;
+        font-size: 18px;
+        color: #0d0d0e;
+       }
+       .btn-download{
+        outline: none;
+        display: block; /* Ensures it appears as a block below */
+        margin-top: -90px;
+        margin-left: -650px;
+        color: #fff;
+        background-color: #66adff;
+        text-align: center;
+        position: relative;
+        padding: .5em 1em;
+        border-radius: 50px;
+        border: 4px solid rgb(245, 243, 239);
+        transition: all 0.3s;
+        cursor: pointer;
+        backface-visibility: hidden;
+        user-select: none;
+        font-size: 1.2em;
+       }
+       .btn-download::after {
+        width: 100%;
+        left: 0;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+        border: 2px solid rgb(245, 243, 239);
+        transform: scale(1.2);
+        border-radius: 50px;
+        top: 0;
+        transition: all 0.3s;
+        content: '';
+        z-index: 1;
+    }
+    .btn-download:hover::after {
+    opacity: 1;
+    transform: scale(1);
+}
+.btn-download:hover {
+    transform: scale(1.1);
+    box-shadow: 0 .2em .5em rgba(0,0,0,.3);
+}
+
+.btn-download:hover::before {
+    opacity: 0;
+    transform: scale(1);
+}
+
+.btn-download::before {
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    opacity: .5;
+    transform: scale(0);
+    border-radius: 3px;
+    top: 0;
+    transition: all 0.3s;
+    content: '';
+    z-index: 1;
+}
+
+.btn-download:focus {
+    outline: none;
+}
+.ctn-report{
+    display: block;
+    margin-left: 80%;
+    margin-top: 10%;
+}
+.ctn-template{
+    display: block;
+    margin-left: 100%;
+    margin-top: 10%;
+}
+.content-body p, span{
+    font-weight: 500;
+    font-size: 20px;
+}
+</style>
+<body>
+    <nav>
+        <div class="nav-title">InnoFund Nexus</div>
+        <div  class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../hero_section/about.html">About Us</a>
+            <a href="#support">Startup Support</a>
+            <a href="#funding">Funding Solutions</a>
+            <a href="#innovation">Innovation Lab</a>
+            <a href="#stories">Success Stories</a>
+            <a href="#resources">Resources</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+    
+    </nav>
+
+    <header>
+        <h1>Resources – InnoFund Nexus Knowledge Hub</h1>
+        <p>Learn & Grow with Expert Insights</p>
+    </header>
+    <!--  -->
+    <section class="section_1 ">
+        <img src="../assets/sec_1_bg.webp" alt="">
+        <div class="content">
+        <h2>INTRODUCTION✨</h2>
+       <p>Access a wide range of guides, toolkits, and expert insights to help your startup succeed. 
+        Our resource hub is designed for entrepreneurs, innovators, and business leaders looking 
+        for the latest trends, strategies, and best practices. </p>
+    </section>
+</div>
+    <!--  -->
+    <section class="section section_7">
+        <h2>Startup Guide & E-Books</h2>
+        <div class="content-book">
+        <div class="book">
+            <ul>
+                <li>Step-by-step guides on starting, funding, and scaling a business. </li>
+                <li>Downloadable e-books from top industry experts. </li>
+            </ul>
+        </div>
+        <img src="../assets/ebook.jpg">
+    </div>
+    
+        <button class="btn-download"><span>Download Guide</span></button>
+    
+    </section>
+<!--  -->
+<section class="section section_4">
+    <h2> Industry Insights & Market Trends</h2>
+    <ul>
+        <li>Stay updated with startup trends, funding news, and emerging technologies. </li>
+        <li> Monthly reports on AI, fintech, sustainability, and more. </li>
+       </ul>
+    <span>🌍 Make informed decisions with data-driven insights! </span>
+    <div class="ctn-report">
+    <button class="btn-download"><span>Industry Report</span></button>
+</div>
+</section>
+<!--  -->
+<section class="section section_5">
+    <h2> Business Templates & Tools  </h2>
+    <div class="content-body">
+        <img src="../assets/business.jpg" alt="">
+        <div class="content">
+            <p>Meet the startups that scaled with InnoFund Nexus.</p>
+            <ul>
+                <li><span class="title">📱 Ready-to-use</span><span>Business plan templates, pitch decks, and financial models. </span></li>
+                <li><span class="title">🛠 Tools</span><span> Market research, competitor analysis, and growth strategies. </span></li>
+            </ul>
+            <span>🔗 Access powerful tools to scale your startup! </span>
+        </div>
+    </div>
+    <div class="ctn-template">
+        <button class="btn-download"><span>Explore Templates</span></button>
+    </div>
+</section>
+
+    <footer class="footer">
+        <p>&copy; 2025 InnoFund Nexus. All rights reserved.</p>
+    </footer>
+</body>
+</html>
